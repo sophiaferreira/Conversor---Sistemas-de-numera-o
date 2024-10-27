@@ -41,7 +41,7 @@ void decimalparatudo(int decimal) {
 
 void binarioparatudo(char binario[]) {
     if (validarBinario(binario)) {
-        if (strcmp(binario, "0") == 0) { //sophia, lembra: compara duas strings e retorna um valor inteiro
+        if (strcmp(binario, "0") == 0) { //lembra: compara duas strings e retorna um valor inteiro
             printf("Decimal: 0\n");
             printf("Octal: 0\n");
             printf("Hexadecimal: 0\n");
@@ -61,7 +61,7 @@ int validarBinario(const char *binario) {
             return 0; // A string não é um número binário válido
         }
     }
-    return 1; // sophia, se todos os caracteres forem 0 ou 1 msm, a string é um num binário válido
+    return 1; // se todos os caracteres forem 0 ou 1 msm, a string é um num binário válido
 }
 
 
@@ -125,7 +125,7 @@ void decimalparahexa(int decimal) {
         if (temporario < 10) {
             hexa[i] = temporario + '0';
         } else {
-            hexa[i] = temporario - 10 + 'A'; //volta aqui sophiaaaaaaaaaaaaaaa
+            hexa[i] = temporario - 10 + 'A'; 
                                             //Verifica se o dígito é menor que 10. 
 											//se for, converte para caractere 0 a 9. caso contrário, converte para uma letra A a F.
         }
